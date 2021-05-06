@@ -75,6 +75,30 @@ INSERT INTO `members` VALUES ('apple','orange','john','john@gmail.com','2021-04-
 UNLOCK TABLES;
 
 --
+-- Table structure for table `quiz`
+--
+
+DROP TABLE IF EXISTS `quiz`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `quiz` (
+  `id` varchar(45) NOT NULL,
+  `question` varchar(45) NOT NULL,
+  `answer` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `quiz`
+--
+
+LOCK TABLES `quiz` WRITE;
+/*!40000 ALTER TABLE `quiz` DISABLE KEYS */;
+/*!40000 ALTER TABLE `quiz` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `user`
 --
 
@@ -108,4 +132,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-28 11:48:42
+-- Dump completed on 2021-05-06 12:30:16
